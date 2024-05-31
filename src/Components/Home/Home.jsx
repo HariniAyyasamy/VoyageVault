@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import './home.css';
 import './home.scss';
-import { Link } from 'react-router-dom';
-
 import video from '../../images/home.mp4';
 import { GrLocation } from 'react-icons/gr';
 import { HiFilter } from 'react-icons/hi';

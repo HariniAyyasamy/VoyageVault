@@ -1,98 +1,50 @@
-/* Contact.css */
+/* src/Contact.css */
 :root {
-    --PrimaryColor: hsl(199,100%,33%);
-    --SecondaryColor: hsl(187, 85%, 43%);
-    --gradientColor: linear-gradient(to right, hsl(187,85%, 43%), hsl(199,100%,33%));
-    --whiteColor: hsl(0,0%,100%);
-    --blackColor: hsl(201,33%,16%);
-    --textColor: hsl(240,4%,36%);
-    --whiteColorDeam: hsl(0,0%,93%);
-    --greyText: rgb(190,190,190);
-    --inputColor: rgb(239,239,239);
-    --bodyColor: rgb(240,240,246);
-    --cardBG: rgb(225,225,235);
-  }
+  --PrimaryColor: hsl(199,100%,33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%, 43%), hsl(199,100%,33%));
+  --whiteColor: hsl(0,0%,100%);
+  --blackColor: hsl(201,33%,16%);
+  --textColor: hsl(240,4%,36%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190,190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+}
+
+.contact-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
   
-  .contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: var(--whiteColor);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .contact-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: var(--textColor);
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: var(--textColor);
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--inputColor);
-    border-radius: 4px;
-    font-size: 1em;
-    background-color: var(--whiteColor);
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: var(--PrimaryColor);
-    outline: none;
-  }
-  
-  .contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--PrimaryColor);
-    border: none;
-    border-radius: 4px;
-    color: var(--whiteColor);
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .contact-form button:hover {
-    background-color: var(--SecondaryColor);
-  }
-  
-  /* App.css */
-  .app nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    background-color: var(--whiteColor);
-    padding: 10px;
-  }
-  
-  .app nav ul li {
-    display: inline;
-  }
-  
-  .app nav ul li a {
-    text-decoration: none;
-    color: var(--PrimaryColor);
-  }
-  
-  .app nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-details {
+  flex: 1 1 30%;
+  background-color: var(--whiteColorDeam);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  max-width: 32%;
+  box-sizing: border-box;
+}
+
+.contact-details h2 {
+  margin-top: 0;
+  color: var(--PrimaryColor);
+}
+
+.contact-details p {
+  margin: 5px 0;
+  color: var(--textColor);
+}
